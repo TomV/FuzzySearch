@@ -3,7 +3,7 @@ describe('Fuzzy search', function(){
     var dictionaryWords = ['people', 'time', 'state', 'point', 'story']
     var match;
 
-    for(var i = 0; i < dictionaryWord.length; i++){
+    for(var i = 0; i < dictionaryWords.length; i++){
       match = fuzzySearch(dictionaryWords[i], words);
       expect(match).to.be(dictionaryWords[i])
     }
